@@ -6,6 +6,7 @@
 
   <PropertyGroup>
     <RuntimeFrameworkVersion>2.0.0</RuntimeFrameworkVersion>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>

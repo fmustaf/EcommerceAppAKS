@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationTests", "tests\I
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunctionalTests", "tests\FunctionalTests\FunctionalTests.csproj", "{7EFB5482-F942-4C3D-94B0-9B70596E6D0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebRazorPages", "src\WebRazorPages\WebRazorPages.csproj", "{3CA62E98-218E-4A74-BF79-1098900BD421}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebRazorPages", "src\WebRazorPages\WebRazorPages.csproj", "{3CA62E98-218E-4A74-BF79-1098900BD421}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0E8D945E-A024-4661-B1FE-5ED790FA852B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +57,10 @@ Global
 		{3CA62E98-218E-4A74-BF79-1098900BD421}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CA62E98-218E-4A74-BF79-1098900BD421}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CA62E98-218E-4A74-BF79-1098900BD421}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E8D945E-A024-4661-B1FE-5ED790FA852B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E8D945E-A024-4661-B1FE-5ED790FA852B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E8D945E-A024-4661-B1FE-5ED790FA852B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E8D945E-A024-4661-B1FE-5ED790FA852B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
