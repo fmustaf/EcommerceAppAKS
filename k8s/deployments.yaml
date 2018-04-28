@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: __REPOSITORY__/web:latest
+          image: __REPOSITORY__/node-todo:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
