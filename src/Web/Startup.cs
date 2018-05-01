@@ -31,10 +31,10 @@ namespace Microsoft.eShopWeb
         public void ConfigureDevelopmentServices(IServiceCollection services)
         {
             // use in-memory database
-            ConfigureTestingServices(services);
+            // ConfigureTestingServices(services);
 
             // use real database
-            // ConfigureProductionServices(services);
+            ConfigureProductionServices(services);
 
         }
         public void ConfigureTestingServices(IServiceCollection services)
