@@ -23,6 +23,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebRazorPages", "src\WebRaz
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0E8D945E-A024-4661-B1FE-5ED790FA852B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "k8s", "k8s", "{04FE7BDC-818B-4F9D-9C52-A8D3DC69F80B}"
+	ProjectSection(SolutionItems) = preProject
+		k8s\config_azure.yml = k8s\config_azure.yml
+		k8s\deployments.yaml = k8s\deployments.yaml
+		k8s\services.yaml = k8s\services.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
