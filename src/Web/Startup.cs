@@ -127,6 +127,12 @@ namespace Microsoft.eShopWeb
                 app.UseExceptionHandler("/Catalog/Error");
             }
 
+            using (var scope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            {
+                scope.ServiceProvider.GetService<CatalogContext>().Database.Migrate();
+                scope.ServiceProvider.GetService<AppIdentityDbContext>().Database.Migrate();
+            }
+
             app.UseStaticFiles();
             app.UseAuthentication();
 

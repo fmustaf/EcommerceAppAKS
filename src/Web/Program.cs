@@ -40,7 +40,7 @@ namespace Microsoft.eShopWeb
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseUrls("http://0.0.0.0:5106")
+                .UseUrls("http://0.0.0.0:80") // dotnet app.dll --server.urls "http://0.0.0.0:80"
                 .UseStartup<Startup>()
                 .Build();
     }
