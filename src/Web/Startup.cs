@@ -108,6 +108,9 @@ namespace Microsoft.eShopWeb
 
             services.AddMvc();
 
+            services.AddApplicationInsightsTelemetry();
+            services.EnableKubernetes();
+
             _services = services;
         }
 

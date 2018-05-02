@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
         - name: web
-          image: __REPOSITORY__/web:latest
+          image: __REPOSITORY__/web:__ImageNumber__
           imagePullPolicy: Always
           env:
           - name: ConnectionStrings__CatalogConnection
@@ -25,6 +25,11 @@ spec:
               configMapKeyRef:
                 name: externalcfg
                 key: web__ConnectionStrings__IdentityConnection
+          - name: ApplicationInsights__InstrumentationKey
+            valueFrom:
+              configMapKeyRef:
+                name: externalcfg
+                key: web__ApplicationInsights__InstrumentationKey
           ports:
             - containerPort: 80
       imagePullSecrets:

@@ -7,3 +7,4 @@ metadata:
 data:
   web__ConnectionStrings__CatalogConnection: __CatalogConnection__
   web__ConnectionStrings__IdentityConnection: __IdentityConnection__
+  web__ApplicationInsights__InstrumentationKey: __AppInsightsKey__

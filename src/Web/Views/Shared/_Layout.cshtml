@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.ApplicationInsights.AspNetCore.JavaScriptSnippet JavaScriptSnippet
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8" />
@@ -21,6 +22,7 @@
   	<link rel="stylesheet" href="~/css/catalog/catalog.component.css" />
     <link rel="stylesheet" href="~/css/basket/basket-status/basket-status.component.css" />
     <link rel="stylesheet" href="~/css/orders/orders.component.css" />
+    @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
 <body>
 	<header class="navbar navbar-light navbar-static-top">
